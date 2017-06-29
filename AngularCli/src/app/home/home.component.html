@@ -1,0 +1,51 @@
+<div class="script">Student Name and Cources
+<!-- <div>
+  <label class="string">Filter student by name and courses</label> -->
+  <input class="box" type="text" [(ngModel)]="term"/> </div>
+<!-- </div> -->
+
+<ol class="rounded-list">
+  <li *ngFor="let student of StudentDetails | filter:term">
+    <!-- <div id="rounded-list"> -->
+      <a>{{student.name | uppercase}}
+      {{student.courses | uppercase}}</a>
+    <!-- </div> -->
+
+  </li>
+</ol>
+
+<!-- <p>
+  {{homeTitle}}
+</p> -->
+<!-- <p>
+  {{details.name}}
+</p>
+<p>
+  {{details.course}}
+</p> -->
+<!-- <p [ngClass]="classes">
+  Working!
+</p>
+<style>
+  .blue{color: blue;}
+  .red{color: red;}
+  .underline{text-decoration: underline;}
+</style> -->
+<!-- <button (click) = "fireYellEvent($event)">Hit Me</button> -->
+
+<!-- <ng-content></ng-content> -->
+
+<!-- Property Binding -->
+<!-- <input value="{{myString}}" />
+<input [required]="myBoolean" />
+<button (click)="alertMe()">Click Me</button> -->
+
+<!-- Two way binding -->
+<!-- <input [(ngModel)]="details.name" />
+<input [(ngModel)]="details.course" />
+<p>
+  {{details.name}}
+</p>
+<p>
+  {{details.course}}
+</p> -->
